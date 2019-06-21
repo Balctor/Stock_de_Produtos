@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Registo de Produtos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+
+    <header>
+        <h1>Registo <small>de </small> Produtos</h1>
+    </header>
+    <div class="area">
+
+        <div id="dados">
+            Nome: <input type="text" name="nome" id="nome"><br> <br>
+            Categoria: <select name="categoria" id="categoria">
+                            <option value="Comida">Comida</option>
+                            <option value="Beleza">Beleza</option>
+                            <option value="Brinquedo">Brinquedo</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Higiene">Higiene</option>
+                            <option value="Papelaria">Papelaria</option>
+                        </select><br><br>
+            Unidade: <input type="number" name="unidade" id="unidade"><br><br>
+            <input type="button" value="Adicionar" id="addP" onclick="add()">
+
+        </div>
+        <div id="tabela">
+            <br><br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Categoria</th>
+                            <th>Unidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+        </div>
+        <div id="extras">
+            <br><br>
+            <hr>
+
+            <input type="button" onclick="del()" id="delR" value="Limpar Registo">
+
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; Balctor Mendonça</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
